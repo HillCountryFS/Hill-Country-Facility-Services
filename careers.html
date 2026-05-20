@@ -162,40 +162,42 @@
         </div>
       </div>
       <div class="reveal">
-        <form data-quote class="form-grid" style="background: var(--bg); padding: 2.5rem; border: 1px solid var(--border); border-radius: 4px; box-shadow: var(--shadow-md);">
-          <div class="form-row"><label>First name <span class="req">*</span></label><input type="text" required></div>
-          <div class="form-row"><label>Last name <span class="req">*</span></label><input type="text" required></div>
-          <div class="form-row"><label>Email <span class="req">*</span></label><input type="email" required></div>
-          <div class="form-row"><label>Phone <span class="req">*</span></label><input type="tel" required></div>
-          <div class="form-row full"><label>Position of interest <span class="req">*</span></label>
-            <select required>
-              <option value="">Select a role</option>
-              <option>Commercial Cleaning Technician</option>
-              <option>Day Porter</option>
-              <option>Floor Care Specialist</option>
-              <option>Coatings Crew Lead</option>
-              <option>On-Site Supervisor</option>
-              <option>Account Manager</option>
-              <option>General Application</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-row full"><label>Years of relevant experience</label>
-            <select>
-              <option>Less than 1 year</option>
-              <option>1–3 years</option>
-              <option>3–5 years</option>
-              <option>5–10 years</option>
-              <option>10+ years</option>
-            </select>
-          </div>
-          <div class="form-row full"><label>Tell us about your background</label><textarea placeholder="Brief summary of your experience and availability"></textarea></div>
-          <div class="form-row full" style="margin-top: 0.5rem;">
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Application
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-        </form>
+        <form method="POST" action="https://hook.us2.make.com/2o1s12p9dq78xziq18llnb72c48ihni5" class="form-grid" style="background: var(--bg); padding: 2.5rem; border: 1px solid var(--border); border-radius: 4px; box-shadow: var(--shadow-md);">
+  <div class="form-row"><label>First name <span class="req">*</span></label><input type="text" name="first_name" required></div>
+  <div class="form-row"><label>Last name <span class="req">*</span></label><input type="text" name="last_name" required></div>
+  <div class="form-row"><label>Email <span class="req">*</span></label><input type="email" name="email" required></div>
+  <div class="form-row"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required></div>
+  <div class="form-row full"><label>Position of interest <span class="req">*</span></label>
+    <select name="position" required>
+      <option value="">Select a role</option>
+      <option>Commercial Cleaning Technician</option>
+      <option>Day Porter</option>
+      <option>Floor Care Specialist</option>
+      <option>Coatings Crew Lead</option>
+      <option>On-Site Supervisor</option>
+      <option>Account Manager</option>
+      <option>General Application</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-row full"><label>Years of relevant experience</label>
+    <select name="years_experience">
+      <option>Less than 1 year</option>
+      <option>1–3 years</option>
+      <option>3–5 years</option>
+      <option>5–10 years</option>
+      <option>10+ years</option>
+    </select>
+  </div>
+  <div class="form-row full"><label>Tell us about your background</label>
+    <textarea name="background" placeholder="Brief summary of your experience and availability"></textarea>
+  </div>
+  <div class="form-row full" style="margin-top: 0.5rem;">
+    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Application
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</form>
       </div>
     </div>
   </div>
