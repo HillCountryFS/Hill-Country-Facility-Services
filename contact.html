@@ -310,17 +310,30 @@ document.addEventListener('DOMContentLoaded', function () {
         body: formData
       });
 
-      form.innerHTML = `
+            form.innerHTML = `
         <div style="text-align:center; padding:2rem;">
           <h3 style="font-family: var(--font-display); margin-bottom: 0.5rem;">
             Thank you for submitting the form!
           </h3>
-          <p style="margin-bottom: 1.5rem;">
+          <p style="margin-bottom: 1rem;">
             Our team will get back to you soon.
           </p>
+
+          <div style="margin-bottom: 1.75rem;">
+            <p style="margin-bottom: 0.5rem;">
+              While you wait, you can review our capabilities overview:
+            </p>
+            <a href="capabilities-overview.pdf" target="_blank" rel="noopener"
+               class="btn btn-secondary">
+              View capabilities PDF
+            </a>
+          </div>
+
           <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
             <a href="index.html" class="btn btn-secondary">Go back home</a>
-            <button type="button" class="btn btn-primary" onclick="location.reload()">Submit another request</button>
+            <button type="button" class="btn btn-primary" onclick="location.reload()">
+              Submit another request
+            </button>
           </div>
         </div>
       `;
